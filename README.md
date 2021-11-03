@@ -4,10 +4,10 @@
 I am a Sports person
 [link to server](https://fwb68kalluri.herokuapp.com/)
 
-<P> myClass=Cricket bat
+<P> myClass=Cricket Bats
 <br>
-my attributes are
+my attributes are as follows
 <br>Name:(String)
 <br>Manufacture:(String)
-<br>Cost:(Number)
+<br>Cost:(Number)</P>
 
