@@ -1,25 +1,25 @@
 extends layout
 
 block content
-  h1= title
+  h1= title  
   p Welcome to #{title}
 
-  p I am a Volleyball player
+  p Shanmukha Sriharsha local server 
+
 
   button(type="button", class="btn btn-success" onclick="update()") Press Me
- 
-  div(id="target") Display
+  br    
+  
+  br
+  div(id="target") Display 
+   script.
+    var client_count=0
+    function update(){
+     client_count++;
+     document.getElementById("target").innerHTML=`value now ${client_count}`
+     }
+    br
 
-    script.
+  a(href="Cricket Bats") Cricket Bats 
 
-      var client_count=0
-
-      function update(){
-
-        client_count++;
-
-        document.getElementById("target").innerHTML=`value now ${client_count}`
-
-      }
-    
-
+  

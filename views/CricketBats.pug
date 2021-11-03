@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p I am a Volleyball player
+
+  button(type="button", class="btn btn-success" onclick="update()") Press Me
+ 
+  div(id="target") Display
+
+    script.
+
+      var client_count=0
+
+      function update(){
+
+        client_count++;
+
+        document.getElementById("target").innerHTML=`value now ${client_count}`
+
+      }
+    
+
