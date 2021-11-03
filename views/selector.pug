@@ -2,24 +2,8 @@ extends layout
 
 block content
   h1= title  
-  p Welcome to #{title}
-
-  p Shanmukha Sriharsha local server 
-
-
-  button(type="button", class="btn btn-primary" onclick="update()") Press Me
-  br    
-  
-  br
-  div(id="target") Display 
-   script.
-    var client_count=0
-    function update(){
-     client_count++;
-     document.getElementById("target").innerHTML=`value now ${client_count}`
-     }
-    br
-
-  a(href="CricketBats") Cricket Bats 
-
-  
+  - var image_names=["ADIDASbat.jpg","MRFbat.png","SFbat.png","SPARTANbat.png","SSbat.png"]
+    - for(let i=0;i<3;i++){
+     - let random= Math.floor(Math.random()*5)
+      img(src=`/images/${image_names[random]}` alt=`Image No ${random}` height="300px" width="300px")
+    -}
